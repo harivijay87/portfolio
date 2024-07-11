@@ -31,7 +31,7 @@ const Content = () => {
             <div className='pro-title'>IMDb Clone</div>
             <div className='pro-description'>I made this project using React Js.  This project is mainly focus on watchlist function. You can add Your Favourite movie on the watchlist. Also you can add your star rating. Each movie has watchoption, by clicking that you can see the information about the movie like Stars name, director name, streaming platform etc... I added 50 (movies + tvshows) data in this project. I used local storage for storing data.
             </div>
-            <Link to='https://harivijay87.github.io/imdb/#/imdb/' target='_blank' style={{textDecoration:'none'}}>
+            <Link to='https://harivijay87.github.io/imdb/' target='_blank' style={{textDecoration:'none'}}>
               <button className='pro-link'>Project Link</button>
             </Link>
           </div>
