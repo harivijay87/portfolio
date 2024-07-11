@@ -1,0 +1,271 @@
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.scroll-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(25, 25, 25);
+}
+.scroll-container .scroll{ 
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 1000px;
+  width: 92vw;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.hero{
+  row-gap: 30px;
+}
+.hero .name{
+  display: flex;
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.hero .name .hello{
+  color: white;
+  margin-right: 10px;
+}
+
+.hero .field{
+  font-weight: 400;
+  font-size: 33px;
+}
+.hero .field .domain{
+  color: var(--main-color);
+}
+.hero .about{
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hero .explore{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.hero .explore button{
+  color: white;
+  background-color: var(--main-color);
+  padding: 12px 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero .explore button:hover{
+  color: black;
+}
+
+
+.projects .title{
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.projects .project-grid{
+  display: flex;
+  column-gap: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.projects .project-grid .project{
+  box-shadow: 0px 0px 5px rgba(255,255,255,0.5);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.projects .project-grid .project .pro-title{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.projects .project-grid .project .pro-description{
+  width:230px;
+  height: 250px;
+  font-size: 17px;
+  border: none;
+  color: black;
+  font-family: poppins;
+  overflow-y: scroll;
+}
+.projects .project-grid .project .pro-description::-webkit-scrollbar{
+  display: none;
+}
+.projects .project-grid .project .pro-link{
+  color: white;
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+.projects .project-grid .project .pro-link:hover{
+  color: black;
+}
+
+
+.contact{
+  padding-top: 3vh;
+}
+.contact .about-me{
+  margin-bottom: 50px;
+}
+.contact .contact-title, .contact .about-title{
+  color: var(--main-color);
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.contact .about-me .about-words{
+  font-family: poppins;
+  font-size: 20px;
+}
+
+.contact .contact-section{
+  border: none;
+}
+.contact .contact-section .contact-row-section{
+  margin-top: 20px;
+}
+.contact .contact-section .contact-row-section .contact-row{
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  margin-bottom: 15px;
+}
+
+.contact .contact-section .contact-row-section .contact-row svg{
+  width: 30px;
+  height: auto;
+}
+
+.contact .contact-section .contact-row-section .contact-row .contact-address{
+  font-family: poppins;
+  font-size: 20px;
+}
+
+
+@media (width < 720px){
+  .contact{
+    padding-top: 3vh;
+  }
+  .contact .about-me{
+    margin-bottom: 4vh;
+  }
+  .contact .contact-title, .contact .about-title{
+    font-size: 8vw;
+    margin-bottom: 1vh;
+  }
+  .contact .about-me .about-words{
+    font-size: 18px;
+  }
+  
+  .contact .contact-section .contact-row-section{
+    margin-top: 2vh;
+  }
+  .contact .contact-section .contact-row-section .contact-row{
+    column-gap: 3vw;
+    margin-bottom: 2vh;
+  }
+  
+  .contact .contact-section .contact-row-section .contact-row svg{
+    width: 1.8rem;
+    height: auto;
+  }
+  
+  .contact .contact-section .contact-row-section .contact-row .contact-address{
+    font-family: poppins;
+    font-size: 0.9rem;
+  }
+}
+@media(width < 370px){
+  .contact .about-me .about-words{
+    font-size: 16px;
+  }
+  .contact .contact-section .contact-row-section .contact-row svg{
+    width: 8vw;
+    height: auto;
+  }
+  
+  .contact .contact-section .contact-row-section .contact-row .contact-address{
+    font-family: poppins;
+    font-size: 4vw;
+  }
+}
+
+@media (width < 600px){
+  .hero{
+    padding-top: 3vh;
+    row-gap: 20px;
+  }
+  .hero .name{
+    font-size: 50px;
+  }
+  .hero .field{
+    font-size: 28px;
+  }
+  .hero .about{
+    font-size: 18px;
+  }
+  .hero .explore button{
+    font-size: 16px;
+  }
+}
+
+@media(width < 400px){
+  .hero{
+    row-gap: 2vh;
+  }
+  .hero .name{
+    font-size: 12vw;
+  }
+  .hero .field{
+    font-size: 8vw;
+  }
+  .hero .about{
+    font-size: 5vw;
+  }
+  .hero .explore button{
+    font-size: 4vw;
+  }
+
+
+  .contact .contact-title, .contact .about-title{
+    font-size: 26px;
+  }
+}
+
+
+@media (width < 500px){
+  .projects .title{
+    font-size: 40px;
+  }
+  .projects .project-grid{
+    column-gap: 15px;
+  }
+  .projects .project-grid .project .pro-description{
+    width:230px;
+    height: 270px;
+  }
+}
