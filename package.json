@@ -1,5 +1,5 @@
 {
-  
+   
   "name": "portfolio",
   
   "private": true,
@@ -11,10 +11,8 @@
   "scripts": {
   
     
-  "deploy": "vite build && vite build --base /portfolio/ --outDir docs",
-  
-    
-  "predeploy": "rm -rf docs",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
   
     
   "dev": "vite",
