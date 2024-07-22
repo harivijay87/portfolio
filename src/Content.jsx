@@ -36,6 +36,14 @@ const Content = () => {
             </Link>
           </div>
           <div className='project'>
+            <div className='pro-title'>Rock-Paper-scissors</div>
+            <div className='pro-description'>A fun Game with good amount of enjoyment. Based on your result, a random gif appear on screen. Counting your scores, score reset and auto play controls are implemented. Responsive UI design and Emoji Animations.  
+            </div>
+            <Link to='https://harivijay87.github.io/Rock-Paper-Scissors/' target='_blank' style={{textDecoration:'none'}}>
+              <button className='pro-link'>Project Link</button>
+            </Link>
+          </div>
+          <div className='project'>
             <div className='pro-title'>TODO APP</div>
             <div className='pro-description'>
               This TODO APP is a web application that allows users to manage their daily tasks efficiently. Users can add and delete tasks. I made this app using react for the frontend development. localstorage used for storing the data.
