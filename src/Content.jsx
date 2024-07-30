@@ -27,6 +27,14 @@ const Content = () => {
       <div className='scroll projects' id='projects'>
         <div className='title'>My Projects</div>
         <div className='project-grid'>
+        <div className='project'>
+            <div className='pro-title'>Recipe-Finder</div>
+            <div className='pro-description'>This is a Recipe-Finder web application. I fetch an api called spoonacular, that containes 1000 0f recipes with more details about recipes. Axios for api fetching, context api for state management. It's have a feature called Favourites, In that favourite section you can add your favourite recipes.
+            </div>
+            <Link to='https://harivijay87.github.io/Recipe-Finder/' target='_blank' style={{textDecoration:'none'}}>
+              <button className='pro-link'>Project Link</button>
+            </Link>
+          </div>
           <div className='project'>
             <div className='pro-title'>IMDb Clone</div>
             <div className='pro-description'>I made this project using React Js.  This project is mainly focus on watchlist function. You can add Your Favourite movie on the watchlist. Also you can add your star rating. Each movie has watchoption, by clicking that you can see the information about the movie like Stars name, director name, streaming platform etc... I added 50 (movies + tvshows) data in this project. I used local storage for storing data.
